@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Etiquetas para Google Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBRa485US4anQ8iknZUxMScgHRYl4eFZQM",
+        authDomain: "vurpiz-portafolio.firebaseapp.com",
+        databaseURL: "https://vurpiz-portafolio.firebaseio.com",
+        projectId: "vurpiz-portafolio",
+        storageBucket: "vurpiz-portafolio.appspot.com",
+        messagingSenderId: "79268780472"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '344647702708733', {
+        em: ivandlm42@gmail.com,
+        fn: Iván,
+        ln: de la Mora,
+      });
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=344647702708733&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Etiquetas para SEO -->
+    <meta charset="utf-8">
+    <title>Vurpiz - Iván de la Mora Portafolio</title>
+    <meta name="title" content="Vurpiz - Portafolio" />
+    <meta name="description" content="Soy Iván de la Mora y este es mi portafolio.  Soy Diseñador gráfico con  conocimientos afines a diseño web, desarrollo de experiencia de usuario (UX Design)." />
+    <meta name="keywords" content="Diseño, Diseño Gráfico, UX Design, Front Developer,  Graphic Design, " />
+    <meta http-equiv="content-language" content="es_MX" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="www.ivandvulpiz.com" />
+    <meta name="author" content="Iván de la Mora" />
+    <meta property="og:title" content="Vurpiz - Portafolio" />
+    <meta property="og:site_name" content="Vurpiz - Portafolio" />
+    <meta name="url" content="www.ivandvulpiz.com" />
+
+    <!-- Etiquetas Responsive -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Etiquetas de Estilos -Favicono -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Etiquetas de Estilos -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/iconos/css/fontello.css">
+    <link rel="stylesheet" href="./css/iconos/css/fontello-codes.css">
+    <link rel="stylesheet" href="./css/iconos/css/fontello-embedded.css">
+    <link rel="stylesheet" href="./css/iconos/css/fontello-animation.css">
+    <link rel="stylesheet" href="./css/iconos/css/ie7.css">
+    <link rel="stylesheet" href="./css/iconos/css/ie7-codes.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html"></a>
+
+      <input type="checkbox" name="btn-menu" value="menu" id="btn-menu">
+      <label for="btn-menu">menú <div class="btn-equis"></div></label>
+
+      <ul>
+        <li class="opt-1"> <a href="./webs/web.html">Diseño Web</a></li>
+        <li class="opt-2"><a href="./webs/marcas.html">Diseño de Marca</a></li>
+        <li class="opt-3"><a href="./webs/ilustracion.html">Ilustraciones</a></li>
+        <li class="opt-5">
+        <input type="button" name="curriculum" value="Curriculum" id="curriculum-pdf2">
+        <label for="curriculum-pdf2">Curriculum</label>
+      </li>
+      </ul>
+
+    </nav>
+    <header>
+      <input type="button" name="curriculum" value="Curriculum" id="curriculum-pdf1">
+      <label for="curriculum-pdf1">Curriculum <div></div></label>
+
+    </header>
+
+    <footer>
+
+      <a target="_blank" href="https://www.facebook.com/delamoraportafolio/" class="icon-facebook-squared"></a>
+      <a target="_blank" href="https://www.linkedin.com/in/iván-de-la-mora-b13869a7" class="icon-linkedin-squared"></a>
+      <a target="_blank" href="https://github.com/ivan-dlm" class="icon-github-circled"></a>
+      <a target="_blank" href="#" class="icon-gplus"></a>
+      <a target="_blank" href="#" class="icon-instagram"></a>
+      <a href="./webs/contacto.html" class="icon-mail-alt"></a>
+
+    </footer>
+
+    <section>
+      <div class="categorias">
+        <div class="c-web">
+
+          <a href="./webs/web.html">Diseño Web</a>
+        </div>
+        <div class="c-marcas">
+
+          <a href="./webs/marcas.html">Diseño de Marca</a>
+        </div>
+        <div class="c-ilustracion">
+
+          <a href="./webs/ilustracion.html">Ilustraciones</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class=".info-contacto">
+
+    </section>
+
+  </body>
+</html>
