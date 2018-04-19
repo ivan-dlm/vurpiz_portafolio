@@ -119,7 +119,7 @@ nav {
       top: -6px;
       border-radius: 10px;
       transition: 0.3s ease-out all;
-      background: blue; }
+      background: black; }
     nav > label .btn-equis::after {
       content: " ";
       display: block;
@@ -129,7 +129,7 @@ nav {
       top: 4px;
       border-radius: 10px;
       transition: 0.3s ease-out all;
-      background: red; }
+      background: black; }
   nav ul {
     position: fixed;
     z-index: -1;
