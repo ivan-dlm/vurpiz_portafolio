@@ -4,9 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #F8FBFF;
-  scroll-behavior: none;
-  overflow-x: hidden; }
+  background: #F8FBFF; }
 
 li {
   list-style: none; }
@@ -32,7 +30,7 @@ nav li, header label, .categorias div a {
   justify-content: center;
   flex-flow: column; }
 
-nav ul, header {
+nav ul, header, .h-contacto {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   column-gap: 20px; }
@@ -119,7 +117,7 @@ nav {
       top: -6px;
       border-radius: 10px;
       transition: 0.3s ease-out all;
-      background: black; }
+      background: blue; }
     nav > label .btn-equis::after {
       content: " ";
       display: block;
@@ -129,7 +127,7 @@ nav {
       top: 4px;
       border-radius: 10px;
       transition: 0.3s ease-out all;
-      background: black; }
+      background: red; }
   nav ul {
     position: fixed;
     z-index: -1;
@@ -223,84 +221,65 @@ footer {
     box-shadow: 0px 3px 8px -5px rgba(0, 0, 0, 0.7);
     transition: 0.3s ease-out all; }
 
-form {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(5, 1.2rem);
-  grid-row-gap: 1.5rem;
-  padding: 1rem;
-  padding-top: 2rem; }
-  form input {
-    display: inline-block;
-    background: none;
-    font-family: "Open Sans", sans-serif;
-    border: none;
-    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
-    transition: 0.3s ease-out;
-    padding-bottom: 6px;
-    padding-left: 8px;
-    grid-column-start: 2;
-    grid-column-end: 12; }
-  form input::placeholder {
-    color: black;
-    transition: 0.3s ease-out;
-    font-family: "Lato", sans-serif;
-    font-style: italic; }
-  form input:focus::placeholder {
-    color: rgba(0, 0, 0, 0.4);
-    transition: 0.3s ease-out;
-    letter-spacing: 1px; }
-  form input:focus {
-    font-size: 1rem;
-    border-bottom: 1px black solid;
-    transition: 0.3s ease-out; }
-  form .inp-1 {
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  form .inp-2 {
-    grid-row-start: 2;
-    grid-row-end: 3; }
-  form .inp-3 {
-    grid-row-start: 3;
-    grid-row-end: 4; }
-  form textarea {
+.h-contacto {
+  grid-template-rows: 2fr 6fr;
+  height: 100vh;
+  padding: 1.2em;
+  padding-top: 60px; }
+  .h-contacto p {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    font-size: 1.2em; }
+  .h-contacto form {
     width: 100%;
-    max-width: 400px;
-    height: 150px;
-    background: none;
-    border: 1px rgba(0, 0, 0, 0.1) solid;
-    padding-left: 8px;
-    padding-top: 6px;
-    transition: 0.3s ease-out;
-    border-radius: 8px;
-    grid-column-start: 2;
-    grid-column-end: 12;
-    grid-row-start: 4;
-    grid-row-end: 6;
-    resize: none; }
-  form textarea::placeholder {
-    color: black;
-    transition: 0.3s ease-out;
-    font-family: "Lato", sans-serif;
-    font-style: italic; }
-  form textarea:focus {
-    border: 1px solid black;
-    transition: 0.3s ease-out; }
-  form textarea:focus::placeholder {
-    color: rgba(0, 0, 0, 0.4);
-    transition: 0.3s ease-out;
-    letter-spacing: 1px; }
-
-@media only screen and (min-width: 768px) {
-  form input {
-    min-width: 399px;
-    max-width: 400px;
-    margin: auto;
-    grid-column-start: 5;
-    grid-column-end: 9; }
-  form textarea {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    margin: auto; } }
+    grid-column-start: 1;
+    grid-column-end: 7; }
+    .h-contacto form input {
+      display: block;
+      background: none;
+      font-family: "Open Sans", sans-serif;
+      border: none;
+      border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+      transition: 0.3s ease-out;
+      padding-bottom: 2px;
+      padding-left: 8px;
+      margin-bottom: 1em;
+      width: 100%; }
+    .h-contacto form input::placeholder {
+      color: black;
+      transition: 0.3s ease-out;
+      font-family: "Lato", sans-serif;
+      font-style: italic; }
+    .h-contacto form input:focus::placeholder {
+      color: rgba(0, 0, 0, 0.4);
+      transition: 0.3s ease-out;
+      letter-spacing: 1px; }
+    .h-contacto form input:focus {
+      font-size: 1rem;
+      border-bottom: 1px black solid;
+      transition: 0.3s ease-out; }
+    .h-contacto form textarea {
+      height: 150px;
+      margin-top: 1em;
+      background: none;
+      border: 1px rgba(0, 0, 0, 0.1) solid;
+      padding-left: 8px;
+      padding-top: 6px;
+      transition: 0.3s ease-out;
+      border-radius: 8px;
+      width: 100%;
+      resize: none; }
+    .h-contacto form textarea::placeholder {
+      color: black;
+      transition: 0.3s ease-out;
+      font-family: "Lato", sans-serif;
+      font-style: italic; }
+    .h-contacto form textarea:focus {
+      border: 1px solid black;
+      transition: 0.3s ease-out; }
+    .h-contacto form textarea:focus::placeholder {
+      color: rgba(0, 0, 0, 0.4);
+      transition: 0.3s ease-out;
+      letter-spacing: 1px; }
 
 /*# sourceMappingURL=main.css.map */

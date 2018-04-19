@@ -1,97 +1,74 @@
-form
-  display: grid
-  grid-template-columns: repeat(12, 1fr)
-  grid-template-rows: repeat(5, 1.2rem)
-  grid-row-gap: 1.5rem
+.h-contacto
+  @extend %column-phone
+  grid-template-rows: 2fr 6fr
+  height: 100vh
+  padding: 1.2em
+  padding-top: 60px
 
-  padding: 1rem
-  padding-top: 2rem
-
-  input
-    display: inline-block
-    background: none
-    font-family: 'Open Sans', sans-serif
-    border: none
-    border-bottom: 1px rgba(black, .1) solid
-    transition: .3s ease-out
-    padding-bottom: 6px
-    padding-left: 8px
-
-    grid-column-start: 2
-    grid-column-end: 12
-
-  input::placeholder
-    color: black
-    transition: .3s ease-out
-    font-family: 'Lato', sans-serif
-    font-style: italic
-
-  input:focus::placeholder
-    color: rgba(black, .4)
-    transition: .3s ease-out
-    letter-spacing: 1px
-
-  input:focus
-    font-size: 1rem
-    border-bottom: 1px rgba(black, 1) solid
-    transition: .3s ease-out
-
-  .inp-1
-    grid-row-start: 1
-    grid-row-end: 2
-
-  .inp-2
-    grid-row-start: 2
-    grid-row-end: 3
-
-  .inp-3
-    grid-row-start: 3
-    grid-row-end: 4
-
-
-  textarea
-    width: 100%
-    max-width: 400px
-    height: 150px
-    background: none
-    border: 1px rgba(black, .1) solid
-    padding-left: 8px
-    padding-top: 6px
-    transition: .3s ease-out
-    border-radius: 8px
-    grid-column-start: 2
-    grid-column-end: 12
-    grid-row-start: 4
-    grid-row-end: 6
-    resize: none
-
-  textarea::placeholder
-    color: black
-    transition: .3s ease-out
-    font-family: 'Lato', sans-serif
-    font-style: italic
-
-  textarea:focus
-    border: 1px solid black
-    transition: .3s ease-out
-
-  textarea:focus::placeholder
-    color: rgba(black, .4)
-    transition: .3s ease-out
-    letter-spacing: 1px
-
-@media only screen and (min-width: 768px)
+  p
+    grid-column-start: 1
+    grid-column-end: 7
+    font-size: 1.2em
 
   form
+    width: 100%
+    grid-column-start: 1
+    grid-column-end: 7
+
     input
-      min-width: 399px
-      max-width: 400px
-      margin: auto
-      grid-column-start: 5
-      grid-column-end: 9
+      display: block
+      background: none
+      font-family: 'Open Sans', sans-serif
+      border: none
+      border-bottom: 1px rgba(black, .1) solid
+      transition: .3s ease-out
+      padding-bottom: 2px
+      padding-left: 8px
+
+      margin-bottom: 1em
+      width: 100%
+
+    input::placeholder
+      color: black
+      transition: .3s ease-out
+      font-family: 'Lato', sans-serif
+      font-style: italic
+
+    input:focus::placeholder
+      color: rgba(black, .4)
+      transition: .3s ease-out
+      letter-spacing: 1px
+
+    input:focus
+      font-size: 1rem
+      border-bottom: 1px rgba(black, 1) solid
+      transition: .3s ease-out
 
     textarea
-      grid-column-start: 5
-      grid-column-end: 9
+      height: 150px
+      margin-top: 1em
+      background: none
+      border: 1px rgba(black, .1) solid
+      padding-left: 8px
+      padding-top: 6px
+      transition: .3s ease-out
+      border-radius: 8px
+      width: 100%
+      resize: none
 
-      margin: auto
+    textarea::placeholder
+      color: black
+      transition: .3s ease-out
+      font-family: 'Lato', sans-serif
+      font-style: italic
+
+    textarea:focus
+      border: 1px solid black
+      transition: .3s ease-out
+
+    textarea:focus::placeholder
+      color: rgba(black, .4)
+      transition: .3s ease-out
+      letter-spacing: 1px
+
+@media only screen and (min-width: 768px)
