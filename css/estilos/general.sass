@@ -1,10 +1,21 @@
+
+$primary-font-color: #f9f9f9
+$second-font-color: #24385d
+$third-font-color: #384064
+$background-color: #bec2cd
+$portfolio-color: #4e4967
+$txt-font: 'Open Sans', sans-serif
+$txt-aux-font: 'Open Sans', sans-serif
+$btn-font: 'Lato', sans-serif
+
 *
   padding: 0px
   margin: 0px
   box-sizing: border-box
+  color: $primary-font-color
 
 body
-  background: #F8FBFF
+  background: $background-color
 
 
 li
@@ -17,12 +28,21 @@ a
 input
   display: none
 
-label
+%portafolio-style
   cursor: pointer
   font-family: 'Lato', sans-serif
   font-style: italic
   font-weight: 400
-  border-radius: 7px
+  border-radius: 10em
+
+  border: $portfolio-color solid 2px
+  background: $portfolio-color
+  box-shadow: 0px 3px 8px -5px rgba(black, .9)
+  transition: .3s ease-out all
+  text-align: center
+  width: 90%
+  height: 3em
+  color: white
 
 %centrar-fun
   display: flex
