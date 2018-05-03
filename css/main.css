@@ -12,7 +12,9 @@ li {
 
 a {
   text-decoration: none;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent; }
 
 input {
   display: none; }
@@ -198,16 +200,9 @@ header {
     color: #4e4967;
     background: rgba(78, 73, 103, 0);
     box-shadow: none;
-    outline: 0px;
-    transition: 0.1s ease-in all; }
-  header a:visited {
-    font-weight: bolder;
-    letter-spacing: 2px;
-    color: #4e4967;
-    background: rgba(78, 73, 103, 0);
-    box-shadow: none;
-    outline: 0px;
-    transition: 0.1s ease-in all; }
+    transition: 0.1s ease-in all;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent; }
   header h2 {
     grid-column-start: 1;
     grid-column-end: 7;
