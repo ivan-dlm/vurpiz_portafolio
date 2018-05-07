@@ -4,6 +4,9 @@
   box-sizing: border-box;
   color: #f9f9f9; }
 
+body {
+  background: #24385d; }
+
 li {
   list-style: none; }
 
