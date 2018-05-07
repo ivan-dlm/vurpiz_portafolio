@@ -176,7 +176,7 @@ header
     grid-column-end: 7
     margin-top: auto
     margin-bottom: 5px
-    color: $second-font-color
+    color: $background-color
 
 
   a
@@ -202,7 +202,7 @@ header
     margin-top: 12px
     text-align: center
     font-size: 1em
-    color: $third-font-color
+    color: $background-color
 
 footer
   display: grid
@@ -240,6 +240,8 @@ footer
   display: grid
   height: 150vh
   grid-template-rows: 2fr 1fr 1fr 1fr
+
+  background: linear-gradient($second-font-color, $background-color, $background-color)
 
   div
     transition: .3s ease-out all
