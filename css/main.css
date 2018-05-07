@@ -167,7 +167,9 @@ header {
   padding-bottom: 50px;
   width: 100%;
   height: 95vh;
-  grid-template-rows: 1fr 5fr 1fr 1fr 1fr; }
+  grid-template-rows: 1fr 5fr 1fr 1fr 1fr;
+  background: linear-gradient(#bec2cd, #bec2cd, #24385d);
+  border-radius: solid 1px #24385d; }
   header h1 {
     grid-column-start: 1;
     grid-column-end: 7;
