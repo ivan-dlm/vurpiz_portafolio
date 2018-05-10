@@ -149,8 +149,7 @@ header
   @extend %column-phone
   grid-template-rows: 1fr 5fr 1fr 1fr 1fr
 
-  background: linear-gradient($background-color, $second-font-color)
-  border-radius: solid 1px $second-font-color
+  background: linear-gradient($third-font-color 10%, rgba($third-font-color, .0) 90%)
 
   h1
     grid-column-start: 1
@@ -211,7 +210,6 @@ footer
   grid-row-gap: 1em
   padding: 100px 20px
   text-align: center
-  background: $second-font-color
 
   p
     grid-column-start: 1
@@ -241,7 +239,7 @@ footer
   height: 150vh
   grid-template-rows: 2fr 1fr 1fr 1fr
 
-  background: linear-gradient($second-font-color, $background-color, $background-color)
+  background: linear-gradient(rgba($third-font-color, .0) 10%, $third-font-color 90%)
 
   div
     transition: .3s ease-out all
