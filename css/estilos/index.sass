@@ -149,7 +149,7 @@ header
   @extend %column-phone
   grid-template-rows: 1fr 5fr 1fr 1fr 1fr
 
-  background: linear-gradient($third-font-color 10%, rgba($third-font-color, .0) 90%)
+  background: linear-gradient($color-primario2 10%, $color-primario1 90%)
 
   h1
     grid-column-start: 1
@@ -175,7 +175,7 @@ header
     grid-column-end: 7
     margin-top: auto
     margin-bottom: 5px
-    color: $background-color
+    color: $color-texto2
 
 
   a
@@ -188,8 +188,7 @@ header
   a:active
     font-weight: bolder
     letter-spacing: 2px
-    color: $portfolio-color
-    background: rgba($portfolio-color, 0)
+    background: rgba($color-secundario1, 0)
     box-shadow: none
     transition: .1s linear all
     -webkit-touch-callout: none
@@ -201,7 +200,7 @@ header
     margin-top: 12px
     text-align: center
     font-size: 1em
-    color: $background-color
+    color: $color-texto2
 
 footer
   display: grid
@@ -210,6 +209,7 @@ footer
   grid-row-gap: 1em
   padding: 100px 20px
   text-align: center
+  background: $portfolio-color
 
   p
     grid-column-start: 1
@@ -239,11 +239,11 @@ footer
   height: 150vh
   grid-template-rows: 2fr 1fr 1fr 1fr
 
-  background: linear-gradient(rgba($third-font-color, .0) 10%, $third-font-color 90%)
+  background: linear-gradient($portfolio-color 10%, $third-font-color 90%)
 
   div
     transition: .3s ease-out all
-    box-shadow: 0px 3px 9px -4px rgba(black, .6)
+    box-shadow: 0px 3px 9px -4px rgba(black, 1)
     transition: .3s ease-out all
 
     a

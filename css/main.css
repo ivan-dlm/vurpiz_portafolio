@@ -1,326 +1,79 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  color: #f9f9f9; }
+/*
+Error: Undefined variable: "$color-negro".
+        on line 41 of estilos/general.sass
+        from line 1 of C:/Users/A. Ruvalcaba/github/vurpiz_portafolio/css/main.sass
 
-body {
-  background: linear-gradient(#ffcf40, #614A00, #614A00, #ffcf40); }
-
-li {
-  list-style: none; }
-
-a {
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: transparent; }
-
-input {
-  display: none; }
-
-nav li label, header a {
-  cursor: pointer;
-  font-family: "Lato", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  border-radius: 10em;
-  border: #212121 solid 3px;
-  background: #212121;
-  box-shadow: 0px 3px 8px -5px rgba(0, 0, 0, 0.9);
-  transition: 1.3s ease-out all;
-  transition-delay: 0.3s;
-  text-align: center;
-  width: 90%;
-  height: 3em;
-  color: white; }
-
-nav li, nav li label, header a, footer p, .categorias div a {
-  display: flex;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  flex-flow: column; }
-
-nav ul, header, .h-contacto {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  column-gap: 20px; }
-
-nav {
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  display: flex;
-  z-index: 1; }
-  nav > a {
-    display: block;
-    background-image: url(../img/logo-vurpiz.svg);
-    background-repeat: no-repeat;
-    width: 37px;
-    height: 37px;
-    margin: auto;
-    margin-left: 1em; }
-  nav #btn-menu:checked ~ ul {
-    height: 100vh;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    transition: 0.3s ease-out all; }
-    nav #btn-menu:checked ~ ul li {
-      opacity: 1;
-      transition: 0.3s ease-out all;
-      transition-delay: 0.2s; }
-  nav #btn-menu:checked ~ label p {
-    overflow: hidden;
-    transition: 0.3s ease-out all;
-    width: 0px;
-    opacity: 0;
-    transition: 0.3s ease-out all; }
-  nav #btn-menu:checked ~ label .btn-equis {
-    transform: translate(-50%, -50%);
-    transform: rotate(45deg);
-    transition: 0.3s ease-out all; }
-  nav #btn-menu:checked ~ label .btn-equis::after {
-    width: 0px;
-    transition: 0.3s ease-out all; }
-  nav #btn-menu:checked ~ label .btn-equis::before {
-    top: 0px;
-    transform: translate(-50%, -50%);
-    transform: rotate(-90deg);
-    transition: 0.3s ease-out all; }
-  nav #btn-menu:checked ~ label:hover .btn-equis::before {
-    width: 23px; }
-  nav > label {
-    margin: auto;
-    margin-left: auto;
-    margin-right: 1em;
-    display: flex; }
-    nav > label p {
-      width: 55px;
-      opacity: 1;
-      overflow: hidden;
-      font-family: "Open Sans", sans-serif;
-      font-size: 1.25em;
-      font-weight: 300;
-      transition: 0.3s all ease-out; }
-    nav > label .btn-equis {
-      width: 23px;
-      height: 2px;
-      background: #f9f9f9;
-      margin: auto;
-      margin-left: 2px;
-      border-radius: 10px;
-      position: relative;
-      left: 0; }
-    nav > label .btn-equis::before {
-      content: " ";
-      display: block;
-      width: 23px;
-      height: 2px;
-      position: relative;
-      top: -6px;
-      border-radius: 10px;
-      transition: 0.3s ease-out all;
-      background: #f9f9f9; }
-    nav > label .btn-equis::after {
-      content: " ";
-      display: block;
-      width: 23px;
-      height: 2px;
-      position: relative;
-      top: 4px;
-      border-radius: 10px;
-      transition: 0.3s ease-out all;
-      background: #f9f9f9; }
-  nav ul {
-    position: fixed;
-    z-index: -1;
-    background: #FFEEB5;
-    width: 100vw;
-    height: 0vh;
-    top: 0px;
-    left: 0px;
-    padding: 1em;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    overflow: hidden;
-    text-align: center;
-    grid-template-rows: 1fr 1fr 1fr 2fr;
-    transition: 0.3s ease-out all; }
-  nav li {
-    opacity: 0;
-    grid-column-start: 1;
-    grid-column-end: 7;
-    width: 80%;
-    height: 100%;
-    margin: auto;
-    border-bottom: 1px solid rgba(249, 249, 249, 0.4);
-    transition: 0.3s ease-out all; }
-    nav li label {
-      margin: auto; }
-  nav li:last-child {
-    border: none; }
-
-header {
-  padding: 20px;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  width: 100%;
-  height: 95vh;
-  grid-template-rows: 1fr 5fr 1fr 1fr 1fr;
-  background: linear-gradient(#FFEEB5 10%, rgba(255, 238, 181, 0) 90%); }
-  header h1 {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    font-size: 2.85em;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 800; }
-  header h3 {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    font-size: 2em;
-    line-height: 1em;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600; }
-  header .descarga-txt {
-    font-size: 0.8em;
-    letter-spacing: 0.125em;
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 7;
-    margin-top: auto;
-    margin-bottom: 5px;
-    color: #ffcf40; }
-  header a {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    margin: auto; }
-  header a:active {
-    font-weight: bolder;
-    letter-spacing: 2px;
-    color: #212121;
-    background: rgba(33, 33, 33, 0);
-    box-shadow: none;
-    transition: 0.1s linear all;
-    -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent; }
-  header h2 {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    margin-top: 12px;
-    text-align: center;
-    font-size: 1em;
-    color: #ffcf40; }
-
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-row-gap: 1em;
-  padding: 100px 20px;
-  text-align: center; }
-  footer p {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    font-family: "Open Sans", sans-serif;
-    font-weight: lighter;
-    letter-spacing: 3px;
-    line-height: 1.1em;
-    font-size: 1.4em; }
-  footer a {
-    color: "Open Sans", sans-serif;
-    font-size: 3.2em; }
-  footer .icon-instagram {
-    grid-column-start: 3;
-    grid-column-end: 4; }
-  footer .icon-mail-alt {
-    grid-column-start: 2;
-    grid-column-end: 3; }
-
-.categorias {
-  display: grid;
-  height: 150vh;
-  grid-template-rows: 2fr 1fr 1fr 1fr;
-  background: linear-gradient(rgba(255, 238, 181, 0) 10%, #FFEEB5 90%); }
-  .categorias div {
-    transition: 0.3s ease-out all;
-    box-shadow: 0px 3px 9px -4px rgba(0, 0, 0, 0.6);
-    transition: 0.3s ease-out all; }
-    .categorias div a {
-      width: 95%;
-      height: 95%;
-      font-family: "Open Sans", sans-serif;
-      font-size: 2.5em;
-      font-weight: bolder;
-      margin: auto; }
-  .categorias div:first-child {
-    box-shadow: 0px 0px 0px 0px;
-    text-align: center;
-    padding: 20px;
-    padding-top: 80px; }
-    .categorias div:first-child h2 {
-      font-size: 2.5em; }
-
-.h-contacto {
-  grid-template-rows: 2fr 6fr;
-  height: 100vh;
-  padding: 1.2em;
-  padding-top: 60px; }
-  .h-contacto p {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    font-size: 1.2em; }
-  .h-contacto form {
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 7; }
-    .h-contacto form input {
-      display: block;
-      background: none;
-      font-family: "Open Sans", sans-serif;
-      border: none;
-      border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
-      transition: 0.3s ease-out;
-      padding-bottom: 2px;
-      padding-left: 8px;
-      margin-bottom: 1em;
-      width: 100%; }
-    .h-contacto form input::placeholder {
-      color: black;
-      transition: 0.3s ease-out;
-      font-family: "Lato", sans-serif;
-      font-style: italic; }
-    .h-contacto form input:focus::placeholder {
-      color: rgba(0, 0, 0, 0.4);
-      transition: 0.3s ease-out;
-      letter-spacing: 1px; }
-    .h-contacto form input:focus {
-      font-size: 1rem;
-      border-bottom: 1px black solid;
-      transition: 0.3s ease-out;
-      outline: 0px; }
-    .h-contacto form textarea {
-      height: 150px;
-      margin-top: 1em;
-      background: none;
-      border: 1px rgba(0, 0, 0, 0.1) solid;
-      padding-left: 8px;
-      padding-top: 6px;
-      transition: 0.3s ease-out;
-      border-radius: 8px;
-      width: 100%;
-      resize: none; }
-    .h-contacto form textarea::placeholder {
-      color: black;
-      transition: 0.3s ease-out;
-      font-family: "Lato", sans-serif;
-      font-style: italic; }
-    .h-contacto form textarea:focus {
-      border: 1px solid black;
-      transition: 0.3s ease-out; }
-    .h-contacto form textarea:focus::placeholder {
-      color: rgba(0, 0, 0, 0.4);
-      transition: 0.3s ease-out;
-      letter-spacing: 1px; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+estilos/general.sass:41
+C:/Users/A. Ruvalcaba/github/vurpiz_portafolio/css/main.sass:1
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:173:in `perform_arg'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `_perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$color-negro\".\A         on line 41 of estilos/general.sass\A         from line 1 of C:/Users/A. Ruvalcaba/github/vurpiz_portafolio/css/main.sass"; }
