@@ -74,7 +74,7 @@ nav
     .btn-equis
       width: 23px
       height: 2px
-      background: $primary-font-color
+      background: $color-texto1
       margin: auto
       margin-left: 2px
       border-radius: 10px
@@ -90,7 +90,7 @@ nav
       top: -6px
       border-radius: 10px
       transition: .3s ease-out all
-      background: $primary-font-color
+      background: $color-texto1
 
     .btn-equis::after
       content: " "
@@ -101,12 +101,12 @@ nav
       top: 4px
       border-radius: 10px
       transition: .3s ease-out all
-      background: $primary-font-color
+      background: $color-texto1
 
   ul
     position: fixed
     z-index: -1
-    background: $third-font-color
+    background: $color-secundario1
     width: 100vw
     height: 0vh
     top: 0px
@@ -128,7 +128,7 @@ nav
     height: 100%
     margin: auto
     @extend %centrar-fun
-    border-bottom: 1px solid rgba($primary-font-color, .4)
+    border-bottom: 1px solid rgba($color-secundario2, .4)
     transition: .3s ease-out all
 
     label
@@ -149,7 +149,7 @@ header
   @extend %column-phone
   grid-template-rows: 1fr 5fr 1fr 1fr 1fr
 
-  background: linear-gradient($color-primario2 10%, $color-primario1 90%)
+  background: linear-gradient($color-primario2 10%, $color-secundario2 90%)
 
   h1
     grid-column-start: 1
@@ -209,7 +209,7 @@ footer
   grid-row-gap: 1em
   padding: 100px 20px
   text-align: center
-  background: $portfolio-color
+  background: $color-secundario2
 
   p
     grid-column-start: 1
@@ -223,12 +223,19 @@ footer
     font-size: 1.4em
 
   a
-    color: $txt-font
+    color: $color-texto1
     font-size: 3.2em
 
   .icon-instagram
     grid-column-start: 3
     grid-column-end: 4
+    margin-right: auto
+    margin-left: -25%
+
+  .icon-gplus
+    margin-left: auto
+    margin-right: -25%
+
 
   .icon-mail-alt
     grid-column-start: 2
@@ -239,7 +246,7 @@ footer
   height: 150vh
   grid-template-rows: 2fr 1fr 1fr 1fr
 
-  background: linear-gradient($portfolio-color 10%, $third-font-color 90%)
+  background: linear-gradient($color-secundario2 10%, $color-primario2 90%)
 
   div
     transition: .3s ease-out all
@@ -249,7 +256,7 @@ footer
     a
       width: 95%
       height: 95%
-      font-family: $txt-font
+      font-family: $color-texto1
       font-size: 2.5em
       font-weight: bolder
       @extend %centrar-fun
