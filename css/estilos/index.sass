@@ -4,6 +4,7 @@ nav
   height: 50px
 
   position: fixed
+  top: 20px
   display: flex
   z-index: 1
 
@@ -158,19 +159,20 @@ header
   @extend %column-phone
   grid-template-rows: 1fr 5fr 1fr 1fr 1fr
 
-  background: linear-gradient(rgba($color-primario2, .6) 5%, $color-secundario2 95%)
+  background: linear-gradient(rgba($color-primario2, .6) 5%, $color-primario1 95%)
 
   h1
     grid-column-start: 1
     grid-column-end: 7
-    font-size: 3em
+    font-size: 3.2em
     font-family: $texto-primario
     font-weight: 600
+    line-height: 4.2rem
 
   h3
     grid-column-start: 1
     grid-column-end: 7
-    font-size: 1.5em
+    font-size: 1.2em
     line-height: 1em
     font-family: $texto-secundario
     letter-spacing: 3px
@@ -185,7 +187,7 @@ header
     grid-column-end: 7
     margin-top: auto
     margin-bottom: 5px
-    color: $color-texto2
+    color: rgba($color-texto2, .6)
     font-family: $texto-primario
 
 
@@ -208,7 +210,8 @@ header
     grid-column-end: 7
     margin-top: 12px
     text-align: center
-    font-size: 1.2em
+    font-size: 1.15em
+    letter-spacing: 1px
     color: $color-texto2
     font-family: $texto-primario
     font-weight: 400
@@ -220,7 +223,7 @@ footer
   grid-row-gap: 1em
   padding: 100px 20px
   text-align: center
-  background: $color-secundario2
+  background: $color-primario1
 
   p
     grid-column-start: 1
@@ -247,7 +250,6 @@ footer
     margin-left: auto
     margin-right: -25%
 
-
   .icon-mail-alt
     grid-column-start: 2
     grid-column-end: 3
@@ -257,10 +259,7 @@ footer
   height: 150vh
   grid-template-rows: 2fr 1fr 1fr 1fr
 
-  background: linear-gradient($color-secundario2 15%, rgba($color-primario2, .6) 85%)
-
-  h2
-    font-family: $texto-secundario
+  background: linear-gradient($color-primario1 15%, rgba($color-primario2, .6) 85%)
 
   div
     transition: .3s ease-out all
@@ -284,4 +283,6 @@ footer
     padding-top: 80px
 
     h2
-      font-size: 2.5em
+      margin-top: 50px
+      font-family: $texto-secundario
+      font-size: 3.2em

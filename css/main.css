@@ -5,7 +5,7 @@
   color: #f9f9f9; }
 
 body {
-  background: #22201c; }
+  background: #201c22; }
 
 li {
   list-style: none; }
@@ -28,7 +28,7 @@ nav li label, header a {
   font-size: 1.5em;
   padding: 0.4rem;
   border: #b6934f solid 1px;
-  background: #b6934f;
+  background: linear-gradient(rgba(214, 200, 172, 0.9), #f3d995 50%, #b6934f);
   transition: 1.3s ease-out all;
   transition-delay: 0.2s;
   text-align: center;
@@ -51,6 +51,7 @@ nav {
   width: 100%;
   height: 50px;
   position: fixed;
+  top: 20px;
   display: flex;
   z-index: 1; }
   nav > a {
@@ -159,7 +160,7 @@ nav {
     width: 80%;
     height: 100%;
     margin: auto;
-    border-bottom: 1px solid #6b6c6d;
+    border-bottom: 1px solid #6c6b6d;
     transition: 0.3s ease-out all;
     font-family: "Raleway", sans-serif;
     font-size: 1.5em;
@@ -178,17 +179,18 @@ header {
   width: 100%;
   height: 95vh;
   grid-template-rows: 1fr 5fr 1fr 1fr 1fr;
-  background: linear-gradient(rgba(107, 108, 109, 0.6) 5%, #1c180f 95%); }
+  background: linear-gradient(rgba(108, 107, 109, 0.6) 5%, #201c22 95%); }
   header h1 {
     grid-column-start: 1;
     grid-column-end: 7;
-    font-size: 3em;
+    font-size: 3.2em;
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+    line-height: 4.2rem; }
   header h3 {
     grid-column-start: 1;
     grid-column-end: 7;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1em;
     font-family: "Raleway", sans-serif;
     letter-spacing: 3px;
@@ -201,7 +203,7 @@ header {
     grid-column-end: 7;
     margin-top: auto;
     margin-bottom: 5px;
-    color: #d6c8ac;
+    color: rgba(214, 200, 172, 0.6);
     font-family: "Source Sans Pro", sans-serif; }
   header a {
     grid-column-start: 1;
@@ -218,7 +220,8 @@ header {
     grid-column-end: 7;
     margin-top: 12px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.15em;
+    letter-spacing: 1px;
     color: #d6c8ac;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400; }
@@ -230,7 +233,7 @@ footer {
   grid-row-gap: 1em;
   padding: 100px 20px;
   text-align: center;
-  background: #1c180f; }
+  background: #201c22; }
   footer p {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -258,12 +261,10 @@ footer {
   display: grid;
   height: 150vh;
   grid-template-rows: 2fr 1fr 1fr 1fr;
-  background: linear-gradient(#1c180f 15%, rgba(107, 108, 109, 0.6) 85%); }
-  .categorias h2 {
-    font-family: "Raleway", sans-serif; }
+  background: linear-gradient(#201c22 15%, rgba(108, 107, 109, 0.6) 85%); }
   .categorias div {
     transition: 0.3s ease-out all;
-    box-shadow: 0px 3px 9px -4px #22201c;
+    box-shadow: 0px 3px 9px -4px #201c22;
     transition: 0.3s ease-out all; }
     .categorias div a {
       width: 95%;
@@ -279,7 +280,9 @@ footer {
     padding: 20px;
     padding-top: 80px; }
     .categorias div:first-child h2 {
-      font-size: 2.5em; }
+      margin-top: 50px;
+      font-family: "Raleway", sans-serif;
+      font-size: 3.2em; }
 
 .h-contacto {
   grid-template-rows: 2fr 6fr;
