@@ -29,8 +29,8 @@ nav li label, header a {
   letter-spacing: 2px;
   font-size: 1.5em;
   padding: 0.4rem;
-  border: #b6934f solid 1px;
-  background: linear-gradient(rgba(214, 200, 172, 0.9), #f3d995 50%, #b6934f);
+  border: #f3d995 solid 2px;
+  background: linear-gradient(#f3d995 10%, #b6934f 90%);
   transition: 1.3s ease-out all;
   text-align: center;
   width: 90%;
@@ -163,7 +163,8 @@ nav {
     width: 80%;
     height: 100%;
     margin: auto;
-    border-bottom: 1px solid #6c6b6d;
+    border: 2px solid #b6934f;
+    box-shadow: 0px 6px 10px -6px rgba(47, 33, 1, 0.8);
     transition: 0.3s ease-out all;
     font-family: "Raleway", sans-serif;
     font-size: 1.5em;
@@ -174,7 +175,8 @@ nav {
       margin: auto;
       display: none; }
   nav li:last-child {
-    border: none; }
+    border: none;
+    box-shadow: none; }
 
 header {
   padding: 20px;
