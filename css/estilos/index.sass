@@ -66,6 +66,9 @@ nav
       transition: .3s ease-out all
       background: $color-secundario1
 
+  #btn-menu:checked ~ a
+    background-image: url(../img/logo-vurpiz-blanco.svg)
+
   #btn-menu:checked ~ ul
     height: 100vh
     padding-top: 100px
@@ -144,6 +147,7 @@ nav
 
     label
       margin: auto
+      display: none
       @extend %centrar-fun
       @extend %portafolio-style
 
