@@ -165,7 +165,7 @@ header
   width: 100%
   height: 95vh
   @extend %column-phone
-  grid-template-rows: 1fr 5fr 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr 5fr 1fr 1fr 1fr
   background: linear-gradient($color-primario2 5%, $color-primario1 95%)
 
   h1
@@ -183,13 +183,28 @@ header
     font-family: $texto-secundario
     letter-spacing: 3px
     font-weight: 300
+    height: 2em
 
   .ysite-img
     grid-column-start: 1
     grid-column-end: 7
     margin: auto
-    margin-bottom: 40px
     width: 90%
+    overflow: hidden
+
+    @keyframes website
+      from
+        top: 100%
+        opacity: 0
+      to
+        top: 0%
+        opacity: 1
+
+    img
+      position: relative
+      width: 100%
+      animation: website .5s ease-out
+      animation-delay: 1.5s
 
   .descarga-txt
     font-size: 1em

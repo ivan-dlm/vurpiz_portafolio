@@ -188,7 +188,7 @@ header {
   padding-bottom: 50px;
   width: 100%;
   height: 95vh;
-  grid-template-rows: 1fr 5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr 1fr 1fr;
   background: linear-gradient(#6c6b6d 5%, #201c22 95%); }
   header h1 {
     grid-column-start: 1;
@@ -203,13 +203,26 @@ header {
     font-size: 1.2em;
     font-family: "Raleway", sans-serif;
     letter-spacing: 3px;
-    font-weight: 300; }
+    font-weight: 300;
+    height: 2em; }
   header .ysite-img {
     grid-column-start: 1;
     grid-column-end: 7;
     margin: auto;
-    margin-bottom: 40px;
-    width: 90%; }
+    width: 90%;
+    overflow: hidden; }
+@keyframes website {
+  from {
+    top: 100%;
+    opacity: 0; }
+  to {
+    top: 0%;
+    opacity: 1; } }
+    header .ysite-img img {
+      position: relative;
+      width: 100%;
+      animation: website 0.5s ease-out;
+      animation-delay: 1.5s; }
   header .descarga-txt {
     font-size: 1em;
     letter-spacing: 0.125em;
