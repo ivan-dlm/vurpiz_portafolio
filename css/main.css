@@ -26,16 +26,14 @@ nav li label, header a {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   border-radius: 10em;
-  text-shadow: #2f2101 0px 2px 2px;
   letter-spacing: 2px;
   font-size: 1.5em;
   padding: 0.4em;
   border: #f3d995 solid 2px;
-  background: linear-gradient(#f3d995 10%, #b6934f 90%);
-  transition: 1.3s ease-out all;
+  transition: 1s ease-out all;
   text-align: center;
   width: 90%;
-  color: #f9f9f9; }
+  color: #f3d995; }
 
 nav li, nav li label, header a, footer p, .categorias div a {
   display: flex;
@@ -81,11 +79,11 @@ nav {
       font-weight: 300;
       line-height: 1.2em;
       transition: 0.3s all ease-out;
-      color: #b6934f; }
+      color: #f3d995; }
     nav > label .btn-equis {
       width: 23px;
       height: 2px;
-      background: #b6934f;
+      background: #f3d995;
       margin: auto;
       margin-left: 0.5em;
       border-radius: 10px;
@@ -100,7 +98,7 @@ nav {
       top: -6px;
       border-radius: 10px;
       transition: 0.3s ease-out all;
-      background: #b6934f; }
+      background: #f3d995; }
     nav > label .btn-equis::after {
       content: " ";
       display: block;
@@ -110,7 +108,7 @@ nav {
       top: 4px;
       border-radius: 10px;
       transition: 0.3s ease-out all;
-      background: #b6934f; }
+      background: #f3d995; }
   nav #btn-menu:checked ~ a {
     background-image: url(../img/logo-vurpiz-blanco.svg); }
   nav #btn-menu:checked ~ ul {
@@ -222,11 +220,12 @@ header {
     grid-column-end: 7;
     margin: auto; }
   header a:active {
-    background: rgba(182, 147, 79, 0);
-    transition: 0.1s linear all;
+    transition: 0.01s linear all;
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: transparent;
-    color: #b6934f; }
+    color: #2f2101;
+    background: #f3d995;
+    font-weight: 400; }
   header h2 {
     grid-column-start: 1;
     grid-column-end: 7;
