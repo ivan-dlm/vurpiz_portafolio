@@ -201,10 +201,15 @@ header {
     grid-column-start: 1;
     grid-column-end: 7;
     font-size: 1.2em;
-    line-height: 1em;
     font-family: "Raleway", sans-serif;
     letter-spacing: 3px;
     font-weight: 300; }
+  header .ysite-img {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    margin: auto;
+    margin-bottom: 40px;
+    width: 90%; }
   header .descarga-txt {
     font-size: 1em;
     letter-spacing: 0.125em;
