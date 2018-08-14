@@ -203,8 +203,10 @@ header
     img
       position: relative
       width: 100%
-      animation: website .5s ease-out
-      animation-delay: 1.5s
+      animation: website .5s ease
+      animation-fill-mode: forwards
+      animation-delay: 1.2s
+      top: 100%
 
   .descarga-txt
     font-size: 1em
@@ -288,6 +290,14 @@ footer
   grid-template-rows: 2fr 1fr 1fr 1fr
 
   background: linear-gradient($color-primario1 15%, rgba($color-primario2, .6) 85%)
+
+  .c-ilustracion
+    overflow: hidden
+
+    img
+      position: absolute
+      z-index: -1
+
 
   div
     transition: .3s ease-out all
